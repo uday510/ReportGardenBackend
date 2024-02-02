@@ -1,8 +1,8 @@
 
 validateLoginRequest = (req, res, next) => {
-  if (!req.body.name) {
+  if (!req.body.userId) {
     return res.status(400).send({
-      message: "Failed ! name is not provided"
+      message: "Failed ! userId is not provided"
     });
   }
   if (!req.body.password) {
